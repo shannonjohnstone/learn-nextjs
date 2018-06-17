@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
-const pages = ['Home', 'About', 'Contact'];
+const menuPages = ['Home', 'About', 'Contact'];
 
 const isRoot = page => page === 'home'
 const returnUrl = (page, isRoot) => isRoot ? '/' : page;
 const determineClassName = current => pageName => `nav__item ${(pageName === current) ? 'active' : ''}`
 
-const RenderLinks = ({ pageName, isActive, url }) => {
+const RenderLink = ({ pageName, isActive, url }) => {
   return (
     <Link key={url} href={url}>
       <a className={isActive}>{pageName}</a>
@@ -19,10 +19,10 @@ const Navigation = ({ current }) => {
   return (
     <nav className='nav'>
       {
-        pages.map((pageName) => {
+        menuPages.map((pageName) => {
           const pageNameLowerCase = pageName.toLowerCase()
           return (
-            <RenderLinks
+            <RenderLink
               pageName={pageName}
               isActive={isActive(pageNameLowerCase)}
               url={returnUrl(pageNameLowerCase, isRoot(pageNameLowerCase))}
