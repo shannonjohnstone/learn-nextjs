@@ -5,5 +5,4 @@ export default () => (
     <h1>About</h1>
     <Navigation current='about' />
   </div>
-
-)
+);
