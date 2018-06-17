@@ -8,3 +8,4 @@
 
 ### Con
   - can only see us easy SSR and code splitting, which can easily be done
+  - param url (:id) configuration is strange

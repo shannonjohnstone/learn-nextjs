@@ -6,7 +6,7 @@ import Session from '../components/session';
 const Index = ({ schedule }) => (
   <Layout current='home'>
     <h1>NextConf Schedule Browser</h1>
-    {schedule.map(sessionInfo => <Session {...sessionInfo} />)}
+    {schedule.map(sessionInfo => <Session key={sessionInfo.slug} {...sessionInfo} />)}
   </Layout>
 );
 
