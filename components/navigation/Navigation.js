@@ -4,7 +4,7 @@ const pages = ['Home', 'About', 'Contact'];
 
 const renderLinks = (page) => {
   const link = page.toLowerCase()
-  return <Link href={link === 'home' ? 'index' : link}><a>{page}</a></Link>
+  return <Link key={link} href={link === 'home' ? 'index' : link}><a>{page}</a></Link>
 }
 
 const Navigation = (current) => (
