@@ -1,1 +1,1 @@
-export default () => <footer>&copy; Don't it! Share</footer>
+export default () => <footer>&copy; Don't steal it! Share</footer>
