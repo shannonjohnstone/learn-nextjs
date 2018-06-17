@@ -1,11 +1,13 @@
+import Link from 'next/link';
+
 export default () => (
   <div>
     <h1>About</h1>
     <p>
-      <a href="/index">Home</a>
+      <Link href="/index">Home</Link>
     </p>
     <p>
-      <a href="/contact">Contact</a>
+      <Link href="/contact">Contact</Link>
     </p>
   </div>
 
