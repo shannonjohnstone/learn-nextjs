@@ -8,7 +8,7 @@ const determineClassName = current => pageName => `nav__item ${(pageName === cur
 
 const RenderLink = ({ pageName, isActive, url }) => {
   return (
-    <Link key={url} href={url}>
+    <Link href={url}>
       <a className={isActive}>{pageName}</a>
     </Link>
   )
@@ -23,6 +23,7 @@ const Navigation = ({ current }) => {
           const pageNameLowerCase = pageName.toLowerCase()
           return (
             <RenderLink
+              key={pageNameLowerCase}
               pageName={pageName}
               isActive={isActive(pageNameLowerCase)}
               url={returnUrl(pageNameLowerCase, isRoot(pageNameLowerCase))}
