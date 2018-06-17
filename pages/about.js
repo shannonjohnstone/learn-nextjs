@@ -1,8 +1,7 @@
-import Navigation from '../components/navigation';
+import Layout from '../components/layout';
 
 export default () => (
-  <div>
+  <Layout current='about'>
     <h1>About</h1>
-    <Navigation current='about' />
-  </div>
+  </Layout>
 );

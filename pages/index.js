@@ -1,9 +1,8 @@
-import Navigation from '../components/navigation';
+import Layout from '../components/layout';
 
 export default () => (
-  <div>
+  <Layout current='home'>
     <h1>Welcome!</h1>
     <p>This site will a confernce</p>
-    <Navigation current='home' />
-  </div>
+  </Layout>
 );
