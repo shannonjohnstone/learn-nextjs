@@ -1,3 +1,7 @@
 import Navigation from '../../navigation';
 
-export default (props) => <Navigation {...props} />
+export default (props) => (
+  <header className='Header'>
+    <Navigation {...props} />
+  </header>
+)
